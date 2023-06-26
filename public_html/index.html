@@ -1,0 +1,110 @@
+
+<html>
+    <head>
+        <title>Traffic Lamp</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            
+            p{
+                font-size:25px;
+                font-family: "Garamond", Times, serif;
+                text-align:center;
+            }
+           
+            img{
+               padding:20px;
+               
+            }
+            
+            .red{
+                background-color:#E53935;
+                width: 10%;
+                color: white;
+                padding: 10px 20px;
+                margin: 3px ;
+                border:none;
+                border-radius: 25px;
+                cursor: pointer;
+                border: 3px solid black;
+            }
+            
+            .yellow{
+                background-color:#FFD600;
+                width: 10%;
+                color: white;
+                padding: 10px 20px;
+                margin: 3px ;
+                border:none;
+                border-radius: 25px;
+                cursor: pointer;
+                border: 3px solid black;
+            }
+            
+            .green{
+                background-color:#64DD17;
+                width: 10%;
+                color: white;
+                padding: 10px 20px;
+                margin: 3px ;
+                border:none;
+                border-radius: 25px;
+                cursor: pointer;
+                border: 3px solid black;
+            }
+            
+            button{
+                font-family: "Times New Roman", Times, serif;
+            }
+            
+            .red:hover{
+                 box-shadow: 2px 4px #616161;
+            }
+            
+            .yellow:hover{
+                 box-shadow: 2px 4px #616161;
+            }
+            
+            .green:hover{
+                box-shadow: 2px 4px #616161;
+            }
+            
+            
+            button:active {
+                border: 4px solid #1976D2;
+                color:black;
+            }
+            
+            
+            
+           
+        </style>
+        
+    </head>
+    
+    <body>
+        <div style="text-align: center;">
+            <br><br>
+            <p> Aşağıdaki trafik lambasının ışıklarını butonlara basarak değiştirebilirsiniz. </p>
+            
+            <br><br>
+            
+            <img id="trafficlamp" src="trafiklambasibos.png" width="100" height="400"/>
+            
+            <br><br>
+            
+            <button class="red" onclick="document.getElementById('trafficlamp').src='trafiklambasikirmizi.png'">Kırmızı Işık</button>
+            
+            <br><br>
+            
+            <button class="yellow" onclick="document.getElementById('trafficlamp').src='trafiklambasisari.png'">Sarı Işık</button>
+            
+            <br><br>
+            
+            <button class="green" onclick="document.getElementById('trafficlamp').src='trafiklambasiyesil.png'">Yeşil Işık</button>
+            
+            
+        </div>
+    </body>
+</html>
